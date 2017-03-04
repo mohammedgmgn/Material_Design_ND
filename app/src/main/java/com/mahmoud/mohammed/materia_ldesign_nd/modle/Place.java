@@ -9,7 +9,7 @@ import android.graphics.drawable.Drawable;
 public class Place {
    private String Tilte;
     private String Description;
-    private int Image;
+    private Drawable Image;
 
     public Place() {
     }
@@ -30,11 +30,11 @@ public class Place {
         Description = description;
     }
 
-    public int getImage() {
+    public Drawable getImage() {
         return Image;
     }
 
-    public void setImage(int image) {
+    public void setImage(Drawable image) {
         Image = image;
     }
 }

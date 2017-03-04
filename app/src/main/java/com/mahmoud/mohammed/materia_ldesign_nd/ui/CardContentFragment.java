@@ -1,4 +1,4 @@
-package com.mahmoud.mohammed.materia_ldesign_nd;
+package com.mahmoud.mohammed.materia_ldesign_nd.ui;
 
 import android.content.Context;
 import android.net.Uri;
@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.mahmoud.mohammed.materia_ldesign_nd.R;
 
 
 public class CardContentFragment extends Fragment {
