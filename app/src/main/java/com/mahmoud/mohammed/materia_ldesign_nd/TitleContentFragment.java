@@ -51,24 +51,23 @@ List<Place> places=new ArrayList<>();
          String[] mtitles;
          final Drawable[] mPlacePictures;
         Resources resources = getContext().getResources();
-       // mtitles = resources.getStringArray(R.array.places);
-        TypedArray mtitlesArray = resources.obtainTypedArray(R.array.places);
-        TypedArray mPlacePicturesArray = resources.obtainTypedArray(R.array.places_picture);
-        TypedArray mPlaceDescriptionArray = resources.obtainTypedArray(R.array.discription);
+       // TypedArray mtitlesArray = resources.obtainTypedArray(R.array.places);
+        //TypedArray mPlacePicturesArray = resources.obtainTypedArray(R.array.places_picture);
+       // TypedArray mPlaceDescriptionArray = resources.obtainTypedArray(R.array.discription);
 
         //  mPlacePictures=new Drawable[mPlacePicturesArray.length()];
-        mtitles=new String[mtitlesArray.length()];
-
+//        mtitles=new String[mtitlesArray.length()];
+/*
         for(int i=0;i<mtitles.length;i++)
         {
             Place place=new Place();
             place.setTilte(mtitlesArray.getString(i));
             place.setImage(mPlacePicturesArray.getDrawable(i));
-            place.setDescription(mPlaceDescriptionArray.getString(i));
+         //   place.setDescription(mPlaceDescriptionArray.getString(i));
             places.add(place);
 
         }
-
+*/
     }
 
 
