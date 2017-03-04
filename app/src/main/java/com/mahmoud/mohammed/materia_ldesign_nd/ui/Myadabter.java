@@ -45,9 +45,9 @@ public class Myadabter extends RecyclerView.Adapter<Myadabter.myholder> {
     public void onBindViewHolder(myholder holder, final int position) {
         String title=places.get(position).getTilte();
        // String description=places.get(position).getDescription();
-        Drawable imageDrawable=places.get(position).getImage();
+        int imageDrawable=places.get(position).getImage();
         holder.title.setText(title);
-        holder.image.setImageDrawable(imageDrawable);
+        holder.image.setImageResource(imageDrawable);
 
 
     }

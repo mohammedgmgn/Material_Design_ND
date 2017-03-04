@@ -6,7 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class DetailActivity extends AppCompatActivity {
-    public static final String EXTRA_POSITION = "position";
+    public static final String TITLE = "title";
+    public static final String DESCRIPTION = "description";
+    public static final String IMAGE = "image";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,10 +19,11 @@ public class DetailActivity extends AppCompatActivity {
 // Set title of Detail page
 
         collapsingToolbar.setTitle(getString(R.string.item_title));
-        int postion = getIntent().getIntExtra(EXTRA_POSITION, 0);
-        Resources resources = getResources();
-       // String[] places = resources.getStringArray(R.array.places);
-        //collapsingToolbar.setTitle(places[postion]);
+        String title=getIntent().getStringExtra(TITLE);
+        String desc=getIntent().getStringExtra(DESCRIPTION);
+        int image=getIntent().getIntExtra(IMAGE,R.drawable.a);
+
+        collapsingToolbar.setTitle(title);
 
     }
 }

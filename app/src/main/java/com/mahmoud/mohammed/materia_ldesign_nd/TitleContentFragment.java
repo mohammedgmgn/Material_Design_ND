@@ -34,7 +34,9 @@ List<Place> places=new ArrayList<>();
             @Override
             public void recyclerViewListClicked(View v, int position) {
                 Intent i=new Intent(getContext(),DetailActivity.class);
-                i.putExtra(DetailActivity.EXTRA_POSITION,position);
+                i.putExtra(DetailActivity.TITLE,places.get(position).getTilte());
+                i.putExtra(DetailActivity.DESCRIPTION,places.get(position).getDescription());
+                i.putExtra(DetailActivity.IMAGE,places.get(position).getImage());
                 startActivity(i);
             }
         });
@@ -51,6 +53,29 @@ List<Place> places=new ArrayList<>();
          String[] mtitles;
          final Drawable[] mPlacePictures;
         Resources resources = getContext().getResources();
+        int images[]={
+                R.drawable.a,
+                R.drawable.abusimbel,
+                R.drawable.abydostempleofosiris,
+                R.drawable.alexandria,
+                R.drawable.aswannile,
+                R.drawable.cairo,
+                R.drawable.egyptianmuseum,
+                R.drawable.katherinesmonastery,
+                R.drawable.luxorkarnaktemple,
+                R.drawable.pyramids,
+                R.drawable.slamicmosque,
+                R.drawable.southsinaibeach,
+                R.drawable.whitedesert,};
+for(int i=0;i<images.length;i++)
+{
+    Place p=new Place();
+    p.setTilte(getString(R.string.siwaoasis));
+    p.setDescription(getString(R.string.detail_desc));
+    p.setImage(images[i]);
+    places.add(p);
+
+}
        // TypedArray mtitlesArray = resources.obtainTypedArray(R.array.places);
         //TypedArray mPlacePicturesArray = resources.obtainTypedArray(R.array.places_picture);
        // TypedArray mPlaceDescriptionArray = resources.obtainTypedArray(R.array.discription);

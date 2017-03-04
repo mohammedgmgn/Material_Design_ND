@@ -3,14 +3,13 @@
     <string name="app_name">"Material Design ND "</string>
     <string name="action_settings">Settings</string>
     <string name="item_title">Palais Garnier</string>
-    <string name="item_desc">The Palais Garnier which locates in Paris was built from 1861 for
-        the Paris Opera.
-    </string>
-    <string name="detail_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
+    <string name="item_desc">The Palais Garnier which locates in Paris was built from 1861 for the Paris Opera.</string>
+
+    <string name="siwaoasis">
+        Way out west,Siwa is the tranquil tonic to the hustle of Egypt's cities,
+            This gorgeous little oasis, surrounded by date palm plantations
+        and numerous fresh water springs, is one of the Western Desert's most picturesque spots.
+            The town is centered around the ruins of a vast mud-brick citadel that dominates the view.
+            This is a top spot to wind down and go slow for a few days as well as being an excellent base from which to plan adventures into the surrounding desert
     </string>
 </resources>
