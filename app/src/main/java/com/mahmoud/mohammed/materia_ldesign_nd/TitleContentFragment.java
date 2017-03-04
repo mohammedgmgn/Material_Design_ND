@@ -33,7 +33,9 @@ List<Place> places=new ArrayList<>();
         Myadabter myadabter=new Myadabter(places, getContext(), new Myadabter.RecyclerViewClickListener() {
             @Override
             public void recyclerViewListClicked(View v, int position) {
-           startActivity(new Intent(getContext(),DetailActivity.class));
+                Intent i=new Intent(getContext(),DetailActivity.class);
+                i.putExtra(DetailActivity.EXTRA_POSITION,position);
+                startActivity(i);
             }
         });
         recyclerView.setAdapter(myadabter);
@@ -52,7 +54,9 @@ List<Place> places=new ArrayList<>();
        // mtitles = resources.getStringArray(R.array.places);
         TypedArray mtitlesArray = resources.obtainTypedArray(R.array.places);
         TypedArray mPlacePicturesArray = resources.obtainTypedArray(R.array.places_picture);
-      //  mPlacePictures=new Drawable[mPlacePicturesArray.length()];
+        TypedArray mPlaceDescriptionArray = resources.obtainTypedArray(R.array.discription);
+
+        //  mPlacePictures=new Drawable[mPlacePicturesArray.length()];
         mtitles=new String[mtitlesArray.length()];
 
         for(int i=0;i<mtitles.length;i++)
@@ -60,6 +64,7 @@ List<Place> places=new ArrayList<>();
             Place place=new Place();
             place.setTilte(mtitlesArray.getString(i));
             place.setImage(mPlacePicturesArray.getDrawable(i));
+            place.setDescription(mPlaceDescriptionArray.getString(i));
             places.add(place);
 
         }
