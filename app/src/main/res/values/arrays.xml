@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="places">
+        <item>Siwa Oasis</item>
+        <item>Abu Simbel</item>
+        <item>Abydos Temple of osiris</item>
+        <item>Alexandria</item>
+        <item>Aswan Nile</item>
+        <item>Egyptian Museum</item>
+        <item>Katherin Esmonastery</item>
+        <item>Luxor Karnak Temple</item>
+        <item>Pyramids</item>
+        <item>Islamic mosque</item>
+        <item>South Sinai Beach</item>
+        <item>White Desert</item>
+
+    </string-array>
+
+    <array name="places_picture">
+        <item>@drawable/a</item>
+        <item>@drawable/abusimbel</item>
+        <item>@drawable/abydostempleofosiris</item>
+        <item>@drawable/alexandria</item>
+        <item>@drawable/aswannile</item>
+        <item>@drawable/egyptianmuseum</item>
+        <item>@drawable/katherinesmonastery</item>
+        <item>@drawable/luxorkarnaktemple</item>
+        <item>@drawable/pyramids</item>
+        <item>@drawable/slamicmosque</item>
+        <item>@drawable/southsinaibeach</item>
+        <item>@drawable/whitedesert</item>
+
+    </array>
+
+
+</resources>
